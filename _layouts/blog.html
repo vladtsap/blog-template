@@ -17,7 +17,7 @@ layout: compress
             <span>
                 <i>
                     <time datetime="2022-01-28" pubdate="">
-                        {{ post.date | date: "%b %-d, %Y" }}
+                        {{ post.date | date: "%Y-%m-%d" }}
                     </time>
                 </i>
             </span>
@@ -35,7 +35,7 @@ layout: compress
         {% assign tag_slug = tag | first %}
         {% assign no_of_posts = tag | last | size %}
 
-        <a href="{{ 'tagged/' | relative_url }}{{ tag_slug }}" title="See all posts by {{ tag_slug }} tag">#{{ tag_slug }}</a>
+        <a href="{{ 'tagged/' | relative_url }}{{ tag_slug }}" title="глянути всі пости з тегом {{ tag_slug }}">#{{ tag_slug }}</a>
         {% endfor %}
     </small>
 
