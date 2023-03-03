@@ -13,6 +13,7 @@ url: "https://knhash.in/jekyllBear" # the base hostname & protocol for your site
 
 plugins:
   - jekyll-redirect-from
+  - jekyll-target-blank
 
 whitelist:
   - jekyll-redirect-from
@@ -27,6 +28,9 @@ compress_html:
   blanklines: false
   ignore:
     envs: []
+
+redirect_from:
+  json: false
 
 # sass:
 #   sass_dir: css
@@ -53,9 +57,9 @@ exclude:
 - README.md
 - LICENSE.md
 
-exclude: [vendor]
+exclude: [vendor, jekyllBear.gemspec]
 
-Blog: /blog
+blog: /blog
 
 # Add general links to site pages here
 links:

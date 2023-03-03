@@ -105,9 +105,18 @@ textarea.full-screen {
     border-width: 10px calc(50vw - 370px);
 }
 
+img {
+    width: 70%;
+    max-width: 100%;
+}
+
 @media only screen and (max-width: 750px) {
     textarea.full-screen {
         border-width: 10px;
+    }
+
+    img {
+        width: 100%;
     }
 }
 
@@ -133,9 +142,6 @@ hr {
     border-top: 1px dashed;
 }
 
-img {
-    max-width: 100%;
-}
 
 code {
     font-family: monospace;
